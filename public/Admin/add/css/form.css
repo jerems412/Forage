@@ -1,0 +1,98 @@
+#regForm {
+    background-color: #ffffff;
+    margin: 9% auto;
+    font-family: 'poppins';
+    padding: 40px;
+    width: 60%;
+    min-width: 300px;
+    color: #3c373e;
+  }
+  
+  #regForm h1 {
+    text-align: center;  
+  }
+
+  #regForm div {
+    font-family: 'poppins';  
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #regForm input,#regForm select {
+    width: 100%;
+    flex-basis: 68%;
+    display: flex;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+
+  }
+
+  #regForm input::placeholder{
+      font-family: 'poppins';
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  #regForm input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  #regForm .tab {
+    display: none;
+  }
+  
+  #regForm button {
+    background-color: #3c373e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  #regForm button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  #regForm .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  #regForm .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  #regForm .step.finish {
+    background-color: #04AA6D;
+  }
+
+  .fa-paper-plane{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    font-size: 26px;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
